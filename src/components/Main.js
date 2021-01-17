@@ -38,7 +38,7 @@ export default function Main() {
     setResponseFromAPI(true);
 
     if (isValid){
-      const result = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3a825143c9123fa6be69e175752e3795`)
+      const result = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=appid`)
         .then(res => {
           // Check status
           if(res.status === 200){
